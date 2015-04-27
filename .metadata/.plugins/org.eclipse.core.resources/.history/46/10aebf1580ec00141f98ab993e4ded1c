@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+void second(){
+
+	printf("\nQuestion 2 :\n\n");
+
+
+}

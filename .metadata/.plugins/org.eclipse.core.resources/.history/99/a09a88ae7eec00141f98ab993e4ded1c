@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+
+void main(){
+
+	////Program 1 : Make 1D array of size 100
+	int array[100];
+
+	//1A : Using pointer Load array from 0 to 99
+	int* ptr = &array[0];
+	int i;
+	for(i = 0; i < 100; i++){
+		*ptr = i;
+		ptr++;
+	}
+
+	//1B : Ascending Order
+
+
+
+
+}

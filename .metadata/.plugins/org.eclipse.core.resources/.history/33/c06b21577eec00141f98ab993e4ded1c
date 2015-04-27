@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+
+void main(){
+
+	////Program 1 : Make 2D array of size 100
+	int array[10][10];
+
+	//1A : Using pointer Load array from 0 to 99
+	int* ptr = &array[0][0];
+
+	printf("%d",ptr);
+
+
+
+}

@@ -1,0 +1,15 @@
+21:18:27 **** Incremental Build of configuration Debug for project Program1-ArrayPointers ****
+make all 
+Building file: ../second.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"second.d" -MT"second.d" -o "second.o" "../second.c"
+Finished building: ../second.c
+ 
+Building target: Program1-ArrayPointers
+Invoking: Cross GCC Linker
+gcc  -o "Program1-ArrayPointers"  ./main.o ./second.o   
+Finished building target: Program1-ArrayPointers
+ 
+
+21:18:27 Build Finished (took 127ms)
+
