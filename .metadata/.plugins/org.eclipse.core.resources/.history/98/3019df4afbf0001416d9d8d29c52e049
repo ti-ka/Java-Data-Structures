@@ -1,0 +1,67 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class HashMe {
+	
+	public String[] names;
+	
+	public void readFile(){
+		try{
+			Scanner sc = new Scanner(new File("names.txt"));
+			int count = 0;
+			while(sc.hasNextLine()){
+				sc.nextLine();
+				count++;
+			}
+			this.names = new String[count];
+
+			sc = new Scanner(new File("names.txt"));
+			count = 0;
+			while(sc.hasNextLine()){
+				this.names[count] = sc.nextLine();
+				count++;
+			}
+			
+			
+			sc.close();
+			//Arrays.fill(this.names, queue);
+		} catch (Exception e){
+			System.out.println("No file found.");
+		}
+	}
+
+	public void sort(){
+		for(int j=0; j<names.length;j++)
+		 {
+		     for (int i=j+1 ; i<names.length; i++)
+		     {
+		    	 if(names[i].trim().compareTo(names[j].trim())<0)
+		         {
+		             String temp = names[j];
+		             names[j] = names[i]; 
+		             names[i] = temp;
+		         }
+		     }
+
+		 }
+	}
+	
+	public void hash(int limit){
+		for(int i = 0; i < names.length; i++){
+			System.out.println(
+				(i + 1 ) + "\t" + 
+				names[i] + "\t\t\t" +
+				getHashIndex(limit,i)
+				
+			);
+		}
+	}
+		
+	public int getHashIndex(int limit,int i){
+		double d = limit/names.length;
+		System.out.println(d);
+		
+		return (int) d;
+	}
+	
+}

@@ -1,0 +1,27 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		getFile("postfix");
+	}
+	
+	public static String[] getFile(String filename){
+		String[] temp;
+		try {
+			Scanner sc = new Scanner(new File(filename));
+			while(sc.hasNextLine()){
+				lines++;
+				System.out.println(sc.nextLine());
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("File ("+ filename + ") Not Found.");
+		}
+		
+		return null;
+		
+	}
+
+}

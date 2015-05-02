@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+import java.io.*;
+
+public class HashMe {
+	
+	private String[] names;
+
+	public static void main(String[] args) {
+
+	}
+	
+	public void readFile(){
+		try{
+			Scanner sc = new Scanner(new File("names.txt"));
+			Queue queue = new LinkedList();
+			while(sc.hasNextLine()){
+				queue.add(sc.nextLine());
+			}
+			
+			
+		} catch (Exception e){
+			System.out.println("No file found.");
+		}
+	}
+
+}

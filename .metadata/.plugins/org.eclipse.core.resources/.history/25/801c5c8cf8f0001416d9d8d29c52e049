@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class HashMe {
+	
+	public String[] names;
+	
+	public  void readFile(){
+		try{
+			Scanner sc = new Scanner(new File("names.txt"));
+			int count;
+			while(sc.hasNextLine()){
+				sc.nextLine();
+			}
+			sc.close();
+			//Arrays.fill(this.names, queue);
+		} catch (Exception e){
+			System.out.println("No file found.");
+		}
+	}
+
+}

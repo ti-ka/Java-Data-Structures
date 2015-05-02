@@ -1,0 +1,9 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		HashMe hash = new HashMe();
+		hash.readFile();
+		System.out.println(hash.names);
+	}
+}

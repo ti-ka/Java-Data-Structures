@@ -1,0 +1,23 @@
+file name
+buff.txt
+parentheses tests
+x = ((2 + 2)*3)
+x = (1 + 2))*3)
+y = (z * j)/(b * 8)^2
+postfix equation solving
+1 2 + 8 *
+1 2 + 1 2 * *
+8 4 / 8 4 - +
+infix to postfix conversion
+a + b
+a * b
+(a + b)*c
+a + b * c
+(a+b)*(c+d)
+full system check
+(1 * 8)/4
+((2 + 3) - (6 / 3))
+(((2*3))) - 1
+(1 + 2)) - 3
+((1 - 2) + 3
+(1+2)-(2-1)/(2-1)-0

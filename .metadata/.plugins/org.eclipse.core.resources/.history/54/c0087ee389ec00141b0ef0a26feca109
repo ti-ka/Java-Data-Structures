@@ -1,0 +1,9 @@
+
+public class EvalPostFix {
+	private line;
+
+	public EvalPostFix(String line){
+		
+	}
+	
+}
