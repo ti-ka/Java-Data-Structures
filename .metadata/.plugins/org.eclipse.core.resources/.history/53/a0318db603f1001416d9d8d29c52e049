@@ -1,0 +1,10 @@
+public class TreeNode {
+	public int data;
+	public TreeNode left,right;
+	public int freq;
+	
+	TreeNode(int num){
+		this.data = num;
+	}
+
+}

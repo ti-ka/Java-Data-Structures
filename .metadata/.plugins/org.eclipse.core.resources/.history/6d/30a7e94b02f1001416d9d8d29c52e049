@@ -1,0 +1,26 @@
+public class Tree {
+	public TreeNode root = null;
+
+	public Tree(){
+		root = null;
+	}
+	
+	public Tree(int[] array){
+		for(int i = 0; i < array.length; i++){
+			int num = array[i];
+			TreeNode current = root;
+			
+			if(current != null){
+				
+			}
+			
+			
+			
+			
+			
+			
+		}
+	}
+	
+	
+}

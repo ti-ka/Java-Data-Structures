@@ -1,0 +1,13 @@
+public class Tree {
+	public root = null;
+
+	public Tree(){
+		
+	}
+	
+	public Tree(int[] array){
+		
+	}
+	
+	
+}

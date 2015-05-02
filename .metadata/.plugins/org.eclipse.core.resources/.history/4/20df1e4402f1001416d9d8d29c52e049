@@ -1,0 +1,6 @@
+public class TreeNode {
+	public int data = null;
+	public TreeNode left,right;
+	public int freq;
+
+}
