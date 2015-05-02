@@ -20,7 +20,7 @@ public class Main {
 		
 		System.out.println("\n"+ tree.compares + " comparisons");
 		System.out.println(""+ (end-start) + " milliseconds");
-		//System.out.println(ObjectSizeFetcher.getObjectSize(tree) + " bytes");
+		System.out.println(ObjectSizeFetcher.getObjectSize(tree) + " bytes");
 		
 
 

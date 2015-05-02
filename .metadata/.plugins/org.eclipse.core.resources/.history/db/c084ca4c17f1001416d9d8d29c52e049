@@ -1,5 +1,6 @@
 import java.io.File;
 import java.util.Scanner;
+import java.lang.instrument.Instrumentation;
 
 public class Main {
 
@@ -20,7 +21,7 @@ public class Main {
 		
 		System.out.println("\n"+ tree.compares + " comparisons");
 		System.out.println(""+ (end-start) + " milliseconds");
-		//System.out.println(ObjectSizeFetcher.getObjectSize(tree) + " bytes");
+		System.out.println(Instrumentation.getObjectSize(tree) + " milliseconds");
 		
 
 
