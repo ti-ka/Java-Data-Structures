@@ -1,0 +1,21 @@
+public class Sort {
+	public int compares;
+	
+	public bruteSort(int[] array){
+		for(int j=0; j<names.length;j++)
+		 {
+		     for (int i=j+1 ; i<names.length; i++)
+		     {
+		    	 if(names[i].trim().compareTo(names[j].trim())<0)
+		         {
+		             String temp = names[j];
+		             names[j] = names[i]; 
+		             names[i] = temp;
+		         }
+		     }
+
+		 }
+	}
+	
+	
+}

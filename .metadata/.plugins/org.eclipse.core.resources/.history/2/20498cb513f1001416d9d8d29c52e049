@@ -1,0 +1,9 @@
+public class Sort {
+	public int compares;
+	
+	public bruteSort(int[] array){
+		
+	}
+	
+	
+}

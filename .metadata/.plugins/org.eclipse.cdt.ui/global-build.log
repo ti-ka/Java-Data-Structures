@@ -1251,3 +1251,6 @@ Invoking: Cross GCC Linker
 gcc  -o "Program1-ArrayPointers"  ./main.o ./second.o   
 Finished building target: Program1-ArrayPointers
  
+16:16:15 **** Build of configuration Debug for project Program1-ArrayPointers ****
+make all 
+make: Nothing to be done for `all'.
