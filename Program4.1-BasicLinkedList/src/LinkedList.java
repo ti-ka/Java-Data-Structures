@@ -43,11 +43,6 @@ public class LinkedList {
 		}
 	}
 	
-	public void addCollection(int[] array){
-		for(int i = 0; i < array.length; i++){
-			add(array[i]);
-		}
-	}
 	
 	public Node findLastNode(){
 		if(head == null){

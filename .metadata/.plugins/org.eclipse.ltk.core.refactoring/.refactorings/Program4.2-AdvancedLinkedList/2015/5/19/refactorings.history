@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Program4.2-AdvancedLinkedList/data.txt&apos; to &apos;data&apos;" description="Rename resource &apos;data.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="data.txt" name="data" stamp="1430618719905" updateReferences="true"/>
+</session>
