@@ -8,14 +8,39 @@ public class Main {
 		System.out.println("Enter the filename: (Eg: data)");
 		Scanner sc = new Scanner(System.in);
 		String filename = sc.next();
-		sc.close();
+		
+
+		System.out.println("Enter the length of data:");
+		int length = sc.nextInt();
 		
 		
-		String[] names = readFile(filename);
-		System.out.println(names[0]);
+			String[] names = readFile(filename);
+			LinkedList list = new LinkedList();
+
+			for(int i = 0; i < names.length && i < length; i++){
+				list.add(names[i]);
+			}
+			list.print();
+			
+
+			System.out.println("\nPrint beginning with letter : ");
+			String begin = sc.next();
+			
+			LinkedList l = list.beginingWith(begin);
+			l.print();
+			
+			
+
+			/*
+			list.insertAfter(list.head.next, "Test Person");
+			list.removeNode(list.head.next);
+			list.removeNode(list.findLastNode());
+			list.print();
+			*/
 		
 		
-		
+
+			sc.close();
 		
 		
 	}
