@@ -1,0 +1,12 @@
+public class LinkedList {
+	public Node head;
+	
+	public void add(int num){
+		if(this.head == null){
+			head.data = num;
+		}
+	}
+	
+	
+	
+}

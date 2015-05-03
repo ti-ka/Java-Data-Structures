@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		LinkedList list = new LinkedList();
+		
+		Scanner sc = new Scanner(System.in);
+		int length = sc.nextInt();
+		
+		
+		
+		
+	}
+
+}

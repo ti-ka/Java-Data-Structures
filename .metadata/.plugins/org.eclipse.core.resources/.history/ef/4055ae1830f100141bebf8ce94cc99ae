@@ -1,0 +1,14 @@
+public class LinkedList {
+	public Node head;
+	
+	public void add(int num){
+		if(head == null){
+			head.data = num;
+		} else {			
+			head.next = new Node(num);
+		}
+	}
+	
+	
+	
+}

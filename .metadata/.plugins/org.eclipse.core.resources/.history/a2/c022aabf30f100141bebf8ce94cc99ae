@@ -1,0 +1,23 @@
+public class LinkedList {
+	public Node head;
+	
+	public void add(int num){
+		if(head == null){
+			head.data = num;
+		} else {			
+			head.next = new Node(num);
+		}
+	}
+	
+	public Node remove(){
+		if(head == null){
+			return null;
+		} else {
+			this.head = this.head.next;
+		}
+	}
+	
+	
+	
+	
+}
