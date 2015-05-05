@@ -1,0 +1,14 @@
+
+public class Queue {
+	
+	private int top;
+	private int[] queue;
+	
+	public void Queue(){
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,17 @@
+
+public class Stack {
+	private int top;
+	private stack[20];
+	
+	public Stack(){
+		top = -1;
+	}
+	
+	public void push(int num){
+		top++;
+		stack[top] = num;
+			
+	}
+	
+
+}

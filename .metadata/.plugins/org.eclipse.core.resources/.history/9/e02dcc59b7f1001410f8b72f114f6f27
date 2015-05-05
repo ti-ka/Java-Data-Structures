@@ -1,0 +1,17 @@
+
+public class ParenthesisTest {
+
+	private String calc;
+	
+	public ParenthesisTest(String c){
+		calc = c;
+	}
+	
+	public boolean test(){
+		
+		
+		
+		
+		return true;
+	}
+}

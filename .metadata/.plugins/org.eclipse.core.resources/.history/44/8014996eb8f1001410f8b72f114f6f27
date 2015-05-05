@@ -1,0 +1,24 @@
+
+public class ParenthesisTest {
+
+	private String calc;
+	private Stack num;
+	
+	
+	public ParenthesisTest(String c){
+		calc = c;
+		prep();
+	}
+	
+	public boolean test(){
+		
+		
+		
+		
+		return true;
+	}
+	
+	public void prep(){
+		
+	}
+}

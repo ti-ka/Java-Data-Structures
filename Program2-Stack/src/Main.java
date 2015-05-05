@@ -7,11 +7,15 @@ public class Main {
 	public static void main(String[] args) {
 		
 		
-		String[] f = getFileContents("postfix");
-		for(int i = 0; i < f.length; i++){
-			String line = f[i];
+		String[] file = getFileContents("postfix");
+		for(int i = 0; i < file.length; i++){
+			String line = file[i];
+			ParenthesisTest p = new ParenthesisTest(line);
+			p.test();
+			
 			
 		}
+	
 		
 		
 	}
@@ -42,4 +46,5 @@ public class Main {
 		
 	}
 
+	
 }
