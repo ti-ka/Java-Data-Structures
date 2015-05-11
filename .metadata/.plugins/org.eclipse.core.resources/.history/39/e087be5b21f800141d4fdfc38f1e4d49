@@ -81,6 +81,8 @@ public class TransitiveClosure
         
         scan.close();
         
+        print(adjacency_matrix);
+        
         System.out.println("\nThe Transitive Closure of the Graph"); 
         TransitiveClosure transitiveClosure = new TransitiveClosure(numberofvertices);
         transitiveClosure.transitiveClosure(adjacency_matrix);
