@@ -42,9 +42,6 @@ public class Main {
 				);
 		
 		
-		
-		
-		
 	}
 	public static int[] readFile(String file){
 		try{

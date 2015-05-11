@@ -1,0 +1,77 @@
+
+public class RadixSort {
+
+	
+	void sort(int[] numberList, int length){
+		
+		while(length != 0){
+			//Step 1 : Make Buckets
+			int[][] bucket = new int[10][numberList.length];
+			
+			for(int i = 0; i < numberList.length; i++){
+				int place = 1;
+				int num = numberList[i];
+				int placeValue = getPositionValue(num,place);
+				
+				//We got the place value. Now we add it in bucket
+				pushArray(bucket[placeValue], num);
+				
+			}
+			
+			App.print(numberList);
+			
+			//Step 2 : Insert Into Buckets
+			
+			
+			//Step 3  : Fetch From Buckets
+	
+			App.print(bucket);
+			numberList = fetch(bucket,numberList.length);
+			
+			
+			//Step 4 : Again !!!!
+			length++;
+		}
+
+			
+	
+	}
+	
+
+
+	int[] fetch(int[][] bucket, int size){
+		int[] returnArray = new int[size];
+		int ptr = 0;
+		
+		for(int i = 0; i < bucket.length; i++){
+			for (int j = 0; j < bucket[i].length; j++){
+				if(bucket[i][j] != 0){
+					returnArray[ptr] = bucket[i][j];
+					ptr++;
+				}
+			}
+		}
+		return returnArray;
+		
+	}
+	
+	
+	void pushArray(int[] arr, int num){
+		for(int i = 0; i < arr.length; i++){
+			if(arr[i] == 0){
+				arr[i] = num;
+				break;
+			}
+		}
+		
+	}
+	
+	int getPositionValue(int num, int pos){
+		String number = Integer.toString(num);
+		char atPos = number.charAt(number.length() - pos);
+		return Character.getNumericValue(atPos);
+		
+	}
+	
+	
+}

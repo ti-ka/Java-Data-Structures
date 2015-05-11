@@ -1,0 +1,45 @@
+
+public class RadixSort {
+
+	
+	RadixSort(int[] numberList, int length){
+
+		
+		//Step 1 : Make Buckets
+		int[][] bucket = new int[10][numberList.length];
+		
+		for(int i = 0; i < numberList.length; i++){
+			int place = 1;
+			
+			int placeValue = getPositionValue(numberList[i],place);
+			
+			//We got the place value. Now we add it in bucket
+			bucket[placeValue][i] = numberList[i];
+			
+		}
+		
+		
+	
+		
+		//Step 2 : Insert Into Buckets
+		
+		
+		//Step 3  : Fetch From Buckets
+		
+		
+		//Step 4 : Again !!!!
+		
+		
+		
+	
+	}
+	
+	int getPositionValue(int num, int pos){
+		String number = Integer.toString(num);
+		char atPos = number.charAt(number.length() - pos);
+		return Character.getNumericValue(atPos);
+		
+	}
+	
+	
+}

@@ -1,44 +1,37 @@
 
 public class Queue {
 	
-	private int front, rear;
-	private char[] queue = new char[100];
+	int front;
+	int rear;
+	char queueArray[];
 	
-	public Queue()
+	public Queue(int input) {
+		this.queueArray = new char[input];
+		this.front = 0;
+		this.rear = -1;
+	}
+	
+	public void push(char x)
 	{
-		front = 0;
-		rear = -1;
+		rear = rear +1;
+		queueArray[rear] =  x;
 	}
 	
-	public void push(char c)
+	public char pop()
 	{
-		if(rear >= 100){
-			System.out.println("Queue Overflow");
-		} else {
-			rear++;
-			queue[rear] = c;
-				
-		}
+		char x;
+		x = queueArray[front];
+		front = front+1;
+		return x;
 	}
 	
-	public int pop(){
-		if(isEmpty()){
-			System.out.println("Empty Queue");
-			return -1;
-		} else {
-			char temp = queue[front];
-			front++;
-			return temp;	
+	public boolean empty()
+	{
+		boolean IsEmpty = false;
+		if(rear<front){
+			IsEmpty = true;
 		}
+		return IsEmpty;
 	}
 	
-	public boolean isEmpty(){
-		if(front >= rear){
-			return true;
-		}
-		return false;
-	}
-	
-	
-
 }
