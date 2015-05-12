@@ -1,6 +1,6 @@
-16:16:15 **** Build of configuration Debug for project Program1-ArrayPointers ****
+11:16:55 **** Build of configuration Debug for project Program1-ArrayPointers ****
 make all 
 make: Nothing to be done for `all'.
 
-16:16:16 Build Finished (took 959ms)
+11:16:57 Build Finished (took 1s.228ms)
 

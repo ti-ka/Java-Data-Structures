@@ -1254,3 +1254,6 @@ Finished building target: Program1-ArrayPointers
 16:16:15 **** Build of configuration Debug for project Program1-ArrayPointers ****
 make all 
 make: Nothing to be done for `all'.
+11:16:55 **** Build of configuration Debug for project Program1-ArrayPointers ****
+make all 
+make: Nothing to be done for `all'.
