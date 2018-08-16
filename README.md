@@ -1,3 +1,2 @@
-# 390Programs
-
-CMPS 390 Assignments of Patrick McDowell
+# Java Data Structure
+Some implementations of Java Data Structures
